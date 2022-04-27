@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+</head>
+<body>
+    <h1>Open the console to see the magic! </h1>
+    <script type="text/javascript">
+        var animals = ["parrot", "cat", "dog"];
+
+        console.log(animals.length) // 3
+        console.log(animals[1]) // cat
+        console.log(animals[2]) // dog
+        console.log(animals[0]) // parrot
+        console.log(animals[animals.length]) // animals.length is equal to 3 so animals[3] doesn't have a value and will return undefined
+        console.log(animals[animals.length -1]) // dog animals.length is 3; 3-1 = 2 animals[2] = dog
+        console.log(animals.indexOf("bear")) // -1; equivalent to a false value
+        console.log(animals.indexOf("parrot")) //0
+    </script>
+</body>
+</html>
