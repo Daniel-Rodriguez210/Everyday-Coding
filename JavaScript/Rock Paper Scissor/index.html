@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        // var computerChoices = ["r", "p", "s"];
+        // var wins = 0;
+        // var losses = 0;
+        // var ties = 0;
+
+
+        // for (var i = 0; i < 10; i++) {
+        //     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+        //     var userGuess = prompt("Please choose r, p, or, s.");
+        //     userGuess = userGuess.toLowerCase();
+
+        //     if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
+
+        //         alert("The computer chose " + computerGuess);
+
+        //         // Win/lose conditions:
+        //         if ((userGuess === "r" && computerGuess === "s") ||
+        //             (userGuess === "s" && computerGuess === "p") ||
+        //             (userGuess === "p" && computerGuess === "r")) {
+        //             wins++;
+        //             alert("You've won " + wins + " time(s)!");
+        //         } else if (userGuess === computerGuess) {
+        //             ties++;
+        //             alert("You've tied " + ties + " time(s).");
+        //         } else {
+        //             losses++;
+        //             alert("You've lost " + losses + " time(s).");
+        //         }
+        //     }
+        // }
+
+        // alert("Total wins: " + wins + "\nTotal ties: " + ties + "\nTotal losses: " + losses);
+
+        computerChoices = ["r", "s", "p"];
+
+        var wins = 0;
+        var losses = 0;
+        var ties = 0;
+
+        for (var i = 0; i < 10; i++) {
+            var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+            var userGuess = prompt("Enter r, p, or s to play!");
+            userGuess = userGuess.toLowerCase();
+
+            if (userGuess === "r" || userGuess === "s" || userGuess === "p") {
+                
+                alert("The computer chose " + computerGuess);
+
+                if ((userGuess === "r" && computerGuess ==="s") || (userGuess === "s" && computerGuess ==="p") || (userGuess === "p" && computerGuess ==="r")) {
+                    wins++;
+                    alert("You've won " + wins + " time(s)!");
+                } 
+                else if (userGuess === computerGuess) {
+                    ties++;
+                    alert("You've tied " + ties + " time(s).")
+                }
+                else {
+                    losses++;
+                    alert("You've lost " + losses + " time(s).");
+                }
+            }
+        }
+            alert("Total wins: " + wins + " \nTotal ties: " + ties + "\nTotal losses: " + losses);
+
+
+
+    </script>
+</body>
+
+</html>

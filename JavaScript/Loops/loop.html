@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <script>
+        for(var i = 0; i < 5; i++) {
+            console.log("I am " + [i])
+        }
+        console.log("-----------------------")
+
+        var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+
+        for (var i = 0; i < myFarm.length; i++) {
+            console.log(myFarm[i])
+            var arrayContent = myFarm[i];
+            var textLetter = arrayContent.charAt(0);
+
+            if(textLetter === "c" || textLetter === "o") {
+                alert("Starts with 'c' or 'o'!")
+            }
+
+        }
+
+        
+       
+    </script>
+</body>
+</html>
